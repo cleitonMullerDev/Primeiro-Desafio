@@ -16,9 +16,11 @@ function adicionarAmigo (){
 
         listaAmigos.innerHTML = '';
 
-        for (let amigo of amigos){
-            listaAmigos.innerHTML += <li>${amigo}</li>;
+        for (let i = amigos.length - 1; i >= 0; i--){
+            listaAmigos.innerHTML += `<li>${amigos[i]}</li>`;
+
 }
         input.value = '';
+        input.focus();
     }
 }
